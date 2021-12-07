@@ -17,12 +17,12 @@ with open(f, "rb") as input:
     def guess(most_fr_char):
         if printable_char(chr(most_fr_char ^ 32)):
             return chr(most_fr_char ^ 32)
-        elif printable_char(chr(most_fr_char ^ 101)):
-            return chr(most_fr_char ^ 101)
-        elif printable_char(chr(most_fr_char ^ 116)):
-            return chr(most_fr_char ^ 116)
         elif printable_char(chr(most_fr_char ^ 97)):
             return chr(most_fr_char ^ 97)
+        elif printable_char(chr(most_fr_char ^ 105)):
+            return chr(most_fr_char ^ 105)
+        elif printable_char(chr(most_fr_char ^ 101)):
+            return chr(most_fr_char ^ 101)
 
     for key_len in range(10, 16):
 
