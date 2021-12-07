@@ -81,7 +81,7 @@ python3 decrypt.py <parola> <nume_fisier_input> <nume_fisier_output>
 
    Pentru rezolvare folosim faptul că lungimea cheii de criptare este între 10 și 15 caractere. Pentru fiecare lungime din acest interval, parcurgem fișierul pe bucăți de lungime **lungime_cheie** și creăm o listă de dicționare ce reține frecvența caracterelor ce apar pe pozițiile **index % lungime_cheie**, unde index este poziția curentă de parcurgere a fișierului criptat.
    
-   Caracterul cu frecvența de apariție cea mai mare în fiecare dicționar îl XOR-ăm cu unul din caracterele ' ', 'e', 't', 'a', acestea fiind caracterele ce apar [statistic](https://en.wikipedia.org/wiki/Letter_frequency) de cele mai multe ori într-un text în limba engleză, obținând caracterul corespunzător din posibila cheie de criptare. 
+   Caracterul cu frecvența de apariție cea mai mare în fiecare dicționar îl XOR-ăm cu unul din caracterele ' ', 'a', ' i', 'e', acestea fiind caracterele ce apar [statistic](http://www.cryptogram.org/downloads/words/frequency.html) de cele mai multe ori într-un text în limba română, obținând caracterul corespunzător din posibila cheie de criptare. 
    
    La final, verificăm "potrivirea" fiecărei chei găsite prin calcularea unui procentaj între caracterele care pot apărea într-o cheie validă și numărul total de caractere din fișier, afișând-o pe cea cu procentaj maxim.
 
